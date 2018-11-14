@@ -1,0 +1,19 @@
+//---------------------------// 
+// Patrones de Colores       // 
+//---------------------------//
+
+$principal: #003ca6;
+$texto: #696969; 
+
+/*-----------------------------
+1. Tipografía del Sitio 
+-----------------------------*/
+
+html { 
+    font-size: 13px; 
+}
+body {
+    font-family: arial;
+    color: $texto; 
+     
+}
