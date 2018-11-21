@@ -9,4 +9,69 @@ body {
   font-family: arial;
   color: #696969; }
 
+/*-------------------------------
+1.1 Estilos Generales de Botones
+-------------------------------*/
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3rem;
+  padding: 1rem 2rem; }
+
+.btn:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); }
+
+.btn :after {
+  content: '\f338';
+  font-family: 'Font Awesome 5 Free';
+  position: relative;
+  left: .5rem;
+  transition: all .2s ease; }
+
+.btn:hover:after {
+  left: 1rem; }
+
+.btn-buscar {
+  padding: 0.65rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer; }
+
+.dropdown-menu {
+  border: 1px solid #003ca6;
+  border-top-width: 3px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25); }
+
+.dropdown-menu a i {
+  font-size: 0.85rem;
+  margin-right: .5rem; }
+
+/*---------------------------
+2. Media Queries
+---------------------------*/
+@media (min-width: 768px) {
+  .btn-buscar {
+    padding: 0;
+    font-size: 1.4rem;
+    border-color: transparent; }
+
+  /* Estilos Mega Menú */
+  .navbar .container {
+    position: relative; }
+
+  .mega-menu {
+    position: static; }
+
+  .mega-menu .dropdown-menu {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: auto; } }
+
 /*# sourceMappingURL=styles.css.map */
